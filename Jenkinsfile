@@ -2,7 +2,7 @@ pipeline{
     agent any
         environment{
             DOCKER_IMAGE = 'surya11456/jenkinsprac'
-            DOCKER_CREDENTIALS_ID = 'dockerhub_credentials'
+            DOCKER_CREDENTIALS_ID = 'dockerhub-credentials'
         }
         stages{
             stage('Checkout'){
