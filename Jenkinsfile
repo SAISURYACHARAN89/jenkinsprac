@@ -24,7 +24,6 @@ pipeline {
         stage('Push to Dockerhub') {
             steps {
                 script {
-                    // Corrected the typo 'withRegistery' to 'withRegistry'
                     docker.withRegistry('https://index.docker.io/v1/', DOCKER_CREDENTIALS_ID) {
                         dockerImage.push('latest')
                     }
